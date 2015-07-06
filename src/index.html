@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Peaks - Explore Colorado's Peaks</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <!-- bootstrap 3.3.4 CSS -->
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" />
+  <!-- angularJS 1.4.1 -->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-route.js"></script>
+</head>
+
+<body class="ng-cloak">
+  <!-- ng-cloak prevents flashing janky content til angular is ready -->
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <!-- Mobile Pancake -->
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/">Peaks</a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#/about">About</a></li>
+          <li><a href="#/favorites">Favorites</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <div class="container">
+    <!-- Main content -->
+    <div ng-view></div>
+  </div>
+
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <p class="text-muted credit">Peaks 2015</p>
+    </div>
+  </div>
+
+  <!-- jQuery 2.1.4 -->
+  <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+  <!-- bootstrap 3.3.4 Javascript -->
+  <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <!-- custom modules -->
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/config.js"></script>
+  <script type="text/javascript" src="js/services.js"></script>
+  <script type="text/javascript" src="js/controllers.js"></script>
+  <script type="text/javascript" src="js/filters.js"></script>
+  <script type="text/javascript" src="js/directives.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<div class="col-lg-6">
+  <h2>Peaks</h2>
+  <hr>
+  <ul class="list-group">
+
+    <a href="#" class="list-group-item" ng-repeat="peak in peaks.features">
+      <h4 class="list-group-item-heading">{{peak.properties.peakName}}</h4>
+      <p class="list-group-item-text">{{peak.properties.Elevation}} </p>
+      <p class="list-group-item-text">{{peak.properties.range}} </p>
+    </a>
+
+  </ul>
+</div>

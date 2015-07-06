@@ -1,0 +1,22 @@
+{
+  "name": "hello-angular-1",
+  "version": "0.0.4",
+  "description": "Angular 1.x Hello World",
+  "scripts": {
+    "start": "node server.js",
+    "prestart": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevelopIntelligenceBoulder/hello-angular-1.git"
+  },
+  "author": "Kamren Zorgdrager <kamrenz@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/DevelopIntelligenceBoulder/hello-angular-1",
+  "devDependencies": {
+    "express": "^4.12.4"
+  },
+  "dependencies": {
+    "angular": "^1.4.0"
+  }
+}
