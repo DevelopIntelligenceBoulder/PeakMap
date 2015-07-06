@@ -1,1 +1,1 @@
-# hello-angular-1 + peakmap stuff
+# Really basic Angular project setup for Peakmap
