@@ -1,12 +1,24 @@
 <div class="col-lg-6">
   <h2>Peaks</h2>
   <hr>
-  <ul class="list-group">
 
-    <a href="#" class="list-group-item" ng-repeat="peak in peaks.features">
+
+  <input type="text" ng-model="searchText" placeholder="Filter">
+
+  <label>
+  <select ng-model="chosenpeak" ng-options="peak.properties.range for peak in peaks.features | unique:'range'">
+  <option value="">All Ranges</option>
+  </select>
+  </label>
+
+
+  <ul class="list-group">
+    <!--    <a href="#" class="list-group-item" ng-repeat="peak in peaks.features  | filter:searchText | orderBy: 'rank'"> -->
+    <a class="list-group-item" ng-repeat="peak in peaks.features | filter:chosenpeak.properties.range | filter:searchText">
       <h4 class="list-group-item-heading">{{peak.properties.peakName}}</h4>
       <p class="list-group-item-text">{{peak.properties.Elevation}} </p>
       <p class="list-group-item-text">{{peak.properties.range}} </p>
+      <p class="list-group-item-text">rank {{peak.properties.rank}} </p>
     </a>
 
   </ul>

@@ -10,6 +10,8 @@ var app = angular.module("myApp.controllers", ["ngRoute"]);
 app.controller("homeCtrl", ["$scope",
   function($scope) {
 
+    
+
     $scope.peaks = {
         "type": "FeatureCollection",
         "features": [{
@@ -148,13 +150,24 @@ app.controller("homeCtrl", ["$scope",
 ]);
 
 // Login controller
-app.controller("aboutCtrl", ["$scope", "$location",
-  function($scope, $location) {
+app.controller("aboutCtrl", ["$scope",
+  function($scope) {
 
     // temporary email and password placeholder
     $scope.email = "email@mydomain.com";
     $scope.password = "password";
 
+
+
+  }
+]);
+
+
+app.controller("favoritesCtrl", ["$scope",
+  function($scope) {
+
+    // temporary email and password placeholder
+    $scope.favorites = {};
 
 
   }
